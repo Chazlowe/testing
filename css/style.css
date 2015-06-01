@@ -1,0 +1,229 @@
+body {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h5 {
+  padding: 5px 0 10px 15px;
+  font-size: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.right {
+  float: right;
+}
+
+/** Glyphicons **/
+.glyphicon {
+  color: #fff;
+}
+
+.caret {
+  color: #fff;
+  border-width: 5px;
+  margin: 0 2px 0 0;
+}
+
+aside.side .glyphicon {
+  padding-right: 12px;
+}
+
+.main .glyphicon-signal {
+  color: #4a3b61;
+  margin-right: 5px;
+  font-size: 14px;
+  float: left;
+}
+
+.main .glyphicon-chevron-down {
+  color: #4a3b61;
+}
+
+.main .input-group-addon .glyphicon {
+  color: #4a3b61;
+}
+
+.main .btn-success.right .glyphicon {
+  font-size: 16px;
+  padding: 2px 2px 0 0;
+}
+
+/** Buttons **/
+.main .filter .btn-container {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.main .btn-default {
+  text-align: right;
+}
+
+.main .btn-default .type {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  padding-left: 5px;
+  float: left;
+}
+
+.main .btn.btn-success {
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #49a240;
+  border-color: #419039;
+}
+
+.main .btn.btn-success:hover {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.main .btn-success.btn-sm {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 2px 5px 2px 5px;
+}
+
+/** Header Nav **/
+header .topnavbar {
+  border-radius: 0;
+  background-color: #4a3b61;
+  border: 0;
+}
+
+header .topnavbar, .topnavbar div {
+  min-height: 25px;
+  height: 25px;
+}
+
+header .topnavbar ul.list-unstyled {
+  padding-top: 3px;
+  float: right;
+}
+
+header .topnavbar .list-unstyled a {
+  padding: 0 10px;
+}
+
+/** Aside Sidebar **/
+aside.side {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YxNWQzZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZjYWY1YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f15d3f), color-stop(100%, #fcaf5a));
+  background-image: -moz-linear-gradient(#f15d3f, #fcaf5a);
+  background-image: -webkit-linear-gradient(#f15d3f, #fcaf5a);
+  background-image: linear-gradient(#f15d3f, #fcaf5a);
+  position: fixed;
+  top: 25px;
+  bottom: 0;
+  padding: 0;
+}
+
+aside.side header {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  border-bottom: 3px solid #f5aa7a;
+  padding: 0 10px 0 5px;
+}
+
+aside header img {
+  padding: 5px;
+}
+
+aside.side .nav.nav-stacked a {
+  font-size: 13px;
+  text-shadow: 1px 1px #777;
+  padding: 3px 10px 3px 5px;
+}
+
+aside.side .nav.nav-stacked .nav a {
+  font-size: 11px;
+  text-shadow: none;
+  padding-left: 30px;
+}
+
+aside.side .nav.nav-stacked a:hover {
+  background-color: rgba(250, 186, 143, 0.5);
+}
+
+aside.side .nav.nav-stacked a.active {
+  background-color: rgba(170, 89, 77, 0.7);
+}
+
+aside.side footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+/** Main Content **/
+.main .row {
+  margin-bottom: 10px;
+}
+
+.main .row.bottom {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.main .filter {
+  margin-bottom: 10px;
+}
+
+.main .form-control {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-control::-moz-placeholder {
+  color: #555;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #555;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #555;
+}
+
+.main .filter .input-group-addon {
+  background: #fff;
+  padding: 0 5px 0 5px;
+}
+
+.main .filter, .main .section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-right: 0;
+  padding: 10px;
+}
+
+.main .row section:first-child {
+  padding-right: 0;
+}
+
+.main .section {
+  font-weight: 600;
+  color: #555;
+  padding: 0px;
+  height: 275px;
+  margin-top: 0;
+}
+
+.main .check-default {
+  margin-top: 5px;
+}

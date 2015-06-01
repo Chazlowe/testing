@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upsight &amp; Chaz Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="topnavbar" role="navigation">
+        <div class="container-fluid">
+            <ul class="list-unstyled list-inline">
+                <li><i class="glyphicon glyphicon-pawn"></i><a href="#">PlayHaven</a><i class="caret"></i></li>
+                <li><i class="glyphicon glyphicon-user"></i><a href="#">zombie+1@playerhaven.com</a>
+                <i class="caret"></i></li>
+                <li><a href="#"><i class="glyphicon glyphicon-share-alt"></i></a><i class="caret"></i></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </nav>   
+</header><!-- page header -->  
+      
+<aside class="side col-md-2">
+    <header>
+        <img src="images/upsight_logo.svg" width="30px" alt="Upsight logo">Upsight
+    </header><!-- side header --> 
+    
+    <nav>
+        <ul class="nav nav-stacked">
+            <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Reporting</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#" class="active">Custom Dashboards</a></li>
+                    <li><a href="#">Campaign Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="glyphicon glyphicon-record"></i>Marketing</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#">Campaigns</a></li>
+                    <li><a href="#">Campaign Priority</a></li>
+                </ul>    
+            </li>
+            <li><a href="#"><i class="glyphicon glyphicon-search"></i>Exploration</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#">User Explorer</a></li>
+                    <li><a href="#">DataMine</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <footer>
+        <ul class="nav nav-stacked">
+            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Settings</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">Permissions</a></li>
+                    <li><a href="#">User Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</aside>  
+   
+<div class="main col-md-10 col-md-offset-2">
+    <div class="filter col-md-12">
+       <div class="row">
+        <div class="col-md-3 btn-container">
+           <button type="button" class="btn btn-default btn-block">
+             <i class="glyphicon glyphicon-signal"></i><span class="type"> d</span>
+             <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+        </div>
+        <div class="form-inline col-md-4">
+            <div class="input-group col-md-10">
+              <input type="text" class="form-control" placeholder="April 15, 2015 - May 15, 2015">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+            </div>  
+        </div>
+        <div class="col-md-2 col-md-offset-2 right">
+            <div class="btn btn-success right"><i class="glyphicon glyphicon-plus-sign"></i> Add Chart</div>
+        </div>
+       </div><!-- row -->
+       <div class="row bottom">
+         <div class="col-md-12">
+            <div class="btn btn-success btn-sm">
+            <i class="glyphicon glyphicon-plus-sign"></i> Add Filter</div>
+            <div class="check-default right"><input type="checkbox" name="default"> Make Default</div>
+         </div>
+       </div><!-- row -->
+    </div><!-- filter content -->
+    
+    <div class="row">
+        <section class="col-md-6">
+           <div class="section">
+            <h5>test</h5>
+            <div id="chart-area-1"></div>
+            </div>
+        </section><!-- section left -->
+        
+        <section class="col-md-6">
+           <div class="section">
+            <h5>test 2</h5>
+            <div id="chart-area-2"></div>
+           </div>    
+        </section><!-- section right -->
+    </div><!-- row -->
+</div><!-- main -->                     
+    
+</body>
+</html>
