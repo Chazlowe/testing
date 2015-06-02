@@ -2,13 +2,17 @@ function validity(str) {
   var length = str.length;
   
   // match lowercase and uppercase chars
-  if (length === 1) {
+  for(var i = 0; i < length; i++) {
+    if(!str[i].match(/[a-jZNLQR]/g)) {
+      return false;
+    }
+  }
+  
+  if(length === 1) {
     return (str.match(/[a-j]/g));
   }
   
-  if (!str.match(/[ZNLQR]/g)) {
-    return false;
-  } else if (str[0] === 'Z') {
+  if (str[0] === 'Z') {
     return (str.match(/[a-j]/g));
   }
   
