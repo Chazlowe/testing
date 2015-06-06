@@ -2,22 +2,18 @@ function validity(str) {
   var length = str.length;
   
   // match lowercase and uppercase chars
-  for(var i = 0; i < length; i++) {
-    if(!str[i].match(/[a-jZNLQR]/g)) {
-      return false;
-    }
-  }
-  
   if(length === 1) {
-    return (str.match(/[a-j]/g));
+    return str.match(/[a-j]/g);
+  } else if(length > 2 && !str.slice(1).match(/[ZNLQR]/g)) {
+    return false;
   }
   
   if (str[0] === 'Z') {
-    return (str.match(/[a-j]/g));
-  }
+    return str.match(/[a-j]/g);
+  } 
   
   for (var i = 0; i < length; i++) {
-    if (validity(str.slice(1)) && validity(str.slice(i + 2))) {
+    if (validity(str.substr(1, i + 1)) && validity(str.substr(i + 2))) {
       return true;
     }
   }
@@ -30,11 +26,7 @@ function validateString(str) {
   var words = str.split(/\s/g);
   
   for(var i = 0; i < words.length; i++) {
-    if (validity(words[i])) {
-      output += words[i] + " VALID<br>";
-    } else {
-      output += words[i] + " INVALID<br>";
-    }
+    output += words[i] += validity(words[i]) ? " VALID<br>" : " INVALID<br>";
   }
 }
 
